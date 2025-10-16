@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\digitalrepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\digitalrepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\data\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\data\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digitalrepository\\digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\appsettings.json",
+              "RelativeDocumentMoniker": "DigitalRepository\\appsettings.json",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\appsettings.json*",
+              "RelativeToolTip": "DigitalRepository\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-16T19:38:16.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Program.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Program.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Program.cs*",
+              "RelativeToolTip": "DigitalRepository\\Program.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:37:23.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Controllers\\ItemsController.cs*",
+              "RelativeToolTip": "DigitalRepository\\Controllers\\ItemsController.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwEsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:36:27.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DTOs\\ItemDto.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\DTOs\\ItemDto.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DTOs\\ItemDto.cs*",
+              "RelativeToolTip": "DigitalRepository\\DTOs\\ItemDto.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAA2wDoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:35:17.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DigitalRepository",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
+              "RelativeDocumentMoniker": "DigitalRepository\\DigitalRepository.csproj",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj*",
+              "RelativeToolTip": "DigitalRepository\\DigitalRepository.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-16T19:34:47.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepositoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Data\\RepositoryContext.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Data\\RepositoryContext.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Data\\RepositoryContext.cs",
+              "RelativeToolTip": "DigitalRepository\\Data\\RepositoryContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:26:26.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\Models\\Item.cs",
+              "RelativeToolTip": "DigitalRepository\\Models\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:24:50.542Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
