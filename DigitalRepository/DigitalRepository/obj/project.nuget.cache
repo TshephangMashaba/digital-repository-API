@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RPVCb3ux4yI=",
+  "dgSpecHash": "RvWNxx0XQ+4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
+  "projectFilePath": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -22,6 +22,7 @@
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.21\\microsoft.entityframeworkcore.design.8.0.21.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.21\\microsoft.entityframeworkcore.relational.8.0.21.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.21\\microsoft.entityframeworkcore.sqlserver.8.0.21.nupkg.sha512",
+    "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.21\\microsoft.entityframeworkcore.tools.8.0.21.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\QXZ5SWG\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",

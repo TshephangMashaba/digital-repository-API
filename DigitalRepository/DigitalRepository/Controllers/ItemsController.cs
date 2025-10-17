@@ -1,13 +1,13 @@
 ﻿using DigitalRepository.Data;
 using DigitalRepository.DTOs;
+using DigitalRepository.DTOs.DigitalRepository.DTOs;
 using DigitalRepository.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
 
 namespace DigitalRepository.Controllers
 {
-    // Controllers/ItemsController.cs
     [ApiController]
     [Route("api/[controller]")]
     public class ItemsController : ControllerBase
@@ -21,31 +21,9 @@ namespace DigitalRepository.Controllers
 
         // GET: api/items
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ItemDto>>> GetItems(
-            [FromQuery] string category = null,
-            [FromQuery] string type = null,
-            [FromQuery] string member = null,
-            [FromQuery] string search = null)
+        public async Task<ActionResult<IEnumerable<ItemDto>>> GetItems()
         {
-            var query = _context.Items.AsQueryable();
-
-            // Filtering functionality
-            if (!string.IsNullOrEmpty(category))
-                query = query.Where(i => i.Category.ToString() == category);
-
-            if (!string.IsNullOrEmpty(type))
-                query = query.Where(i => i.Type.Contains(type));
-
-            if (!string.IsNullOrEmpty(member))
-                query = query.Where(i => i.MemberName.Contains(member));
-
-            if (!string.IsNullOrEmpty(search))
-                query = query.Where(i =>
-                    i.Title.Contains(search) ||
-                    i.Description.Contains(search) ||
-                    i.Subject.Contains(search));
-
-            var items = await query
+            var items = await _context.Items
                 .OrderBy(i => i.Category)
                 .ThenBy(i => i.MemberName)
                 .Select(i => new ItemDto
@@ -56,17 +34,23 @@ namespace DigitalRepository.Controllers
                     Subject = i.Subject,
                     Description = i.Description,
                     Publisher = i.Publisher,
-                    DateCreated = i.DateCreated,
-                    DateUploaded = i.DateUploaded,
+                    Contributor = i.Contributor,
+                    Date = i.Date,
                     Type = i.Type,
                     Format = i.Format,
                     Identifier = i.Identifier,
                     Source = i.Source,
                     Language = i.Language,
+                    Relation = i.Relation,
+                    Coverage = i.Coverage,
                     Rights = i.Rights,
                     Category = i.Category,
                     MemberName = i.MemberName,
-                    Explanation = i.Explanation
+                    Explanation = i.Explanation,
+                    DateUploaded = i.DateUploaded,
+                    FileName = i.FileName,
+                    FileContentType = i.FileContentType,
+                    FileSize = i.FileSize
                 })
                 .ToListAsync();
 
@@ -90,25 +74,56 @@ namespace DigitalRepository.Controllers
                 Subject = item.Subject,
                 Description = item.Description,
                 Publisher = item.Publisher,
-                DateCreated = item.DateCreated,
-                DateUploaded = item.DateUploaded,
+                Contributor = item.Contributor,
+                Date = item.Date,
                 Type = item.Type,
                 Format = item.Format,
                 Identifier = item.Identifier,
                 Source = item.Source,
                 Language = item.Language,
+                Relation = item.Relation,
+                Coverage = item.Coverage,
                 Rights = item.Rights,
                 Category = item.Category,
                 MemberName = item.MemberName,
-                Explanation = item.Explanation
+                Explanation = item.Explanation,
+                DateUploaded = item.DateUploaded,
+                FileName = item.FileName,
+                FileContentType = item.FileContentType,
+                FileSize = item.FileSize
             };
 
             return itemDto;
         }
 
+        // GET: api/items/5/file - Download the actual file
+        [HttpGet("{id}/file")]
+        public async Task<IActionResult> GetItemFile(int id)
+        {
+            var item = await _context.Items.FindAsync(id);
+
+            if (item == null || item.FileData == null || item.FileData.Length == 0)
+                return NotFound();
+
+            // Set appropriate content type and headers
+            var contentType = item.FileContentType ?? "application/octet-stream";
+            return File(item.FileData, contentType, item.FileName);
+        }
+
+        // Add a method to check if file exists
+        [HttpGet("{id}/hasfile")]
+        public async Task<ActionResult<bool>> HasFile(int id)
+        {
+            var item = await _context.Items.FindAsync(id);
+            if (item == null) return NotFound();
+
+            return Ok(item.FileData != null && item.FileData.Length > 0);
+        }
+
+
         // POST: api/items
         [HttpPost]
-        public async Task<ActionResult<ItemDto>> CreateItem(CreateItemDto createItemDto)
+        public async Task<ActionResult<ItemDto>> CreateItem([FromBody] CreateItemDto createItemDto)
         {
             var item = new Item
             {
@@ -117,18 +132,37 @@ namespace DigitalRepository.Controllers
                 Subject = createItemDto.Subject,
                 Description = createItemDto.Description,
                 Publisher = createItemDto.Publisher,
-                DateCreated = createItemDto.DateCreated,
-                DateUploaded = DateTime.UtcNow,
+                Contributor = createItemDto.Contributor,
+                Date = createItemDto.Date,
                 Type = createItemDto.Type,
                 Format = createItemDto.Format,
                 Identifier = createItemDto.Identifier,
                 Source = createItemDto.Source,
                 Language = createItemDto.Language,
+                Relation = createItemDto.Relation,
+                Coverage = createItemDto.Coverage,
                 Rights = createItemDto.Rights,
                 Category = createItemDto.Category,
                 MemberName = createItemDto.MemberName,
-                Explanation = createItemDto.Explanation
+                Explanation = createItemDto.Explanation,
+                DateUploaded = DateTime.UtcNow,
+                FileName = createItemDto.FileName,
+                FileContentType = createItemDto.FileContentType,
+                FileSize = createItemDto.FileSize
             };
+
+            // Convert base64 file data to byte array if provided
+            if (!string.IsNullOrEmpty(createItemDto.FileData))
+            {
+                try
+                {
+                    item.FileData = Convert.FromBase64String(createItemDto.FileData);
+                }
+                catch (FormatException)
+                {
+                    return BadRequest("Invalid file data format");
+                }
+            }
 
             _context.Items.Add(item);
             await _context.SaveChangesAsync();
@@ -141,22 +175,191 @@ namespace DigitalRepository.Controllers
                 Subject = item.Subject,
                 Description = item.Description,
                 Publisher = item.Publisher,
-                DateCreated = item.DateCreated,
-                DateUploaded = item.DateUploaded,
+                Contributor = item.Contributor,
+                Date = item.Date,
                 Type = item.Type,
                 Format = item.Format,
                 Identifier = item.Identifier,
                 Source = item.Source,
                 Language = item.Language,
+                Relation = item.Relation,
+                Coverage = item.Coverage,
                 Rights = item.Rights,
                 Category = item.Category,
                 MemberName = item.MemberName,
-                Explanation = item.Explanation
+                Explanation = item.Explanation,
+                DateUploaded = item.DateUploaded,
+                FileName = item.FileName,
+                FileContentType = item.FileContentType,
+                FileSize = item.FileSize
             };
 
             return CreatedAtAction(nameof(GetItem), new { id = item.Id }, itemDto);
         }
 
-        // Additional endpoints for update and delete as needed
+        // PUT: api/items/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateItem(int id, [FromBody] CreateItemDto updateItemDto)
+        {
+            var item = await _context.Items.FindAsync(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            item.Title = updateItemDto.Title;
+            item.Creator = updateItemDto.Creator;
+            item.Subject = updateItemDto.Subject;
+            item.Description = updateItemDto.Description;
+            item.Publisher = updateItemDto.Publisher;
+            item.Contributor = updateItemDto.Contributor;
+            item.Date = updateItemDto.Date;
+            item.Type = updateItemDto.Type;
+            item.Format = updateItemDto.Format;
+            item.Identifier = updateItemDto.Identifier;
+            item.Source = updateItemDto.Source;
+            item.Language = updateItemDto.Language;
+            item.Relation = updateItemDto.Relation;
+            item.Coverage = updateItemDto.Coverage;
+            item.Rights = updateItemDto.Rights;
+            item.Category = updateItemDto.Category;
+            item.MemberName = updateItemDto.MemberName;
+            item.Explanation = updateItemDto.Explanation;
+            item.FileName = updateItemDto.FileName;
+            item.FileContentType = updateItemDto.FileContentType;
+            item.FileSize = updateItemDto.FileSize;
+
+            // Update file data if provided
+            if (!string.IsNullOrEmpty(updateItemDto.FileData))
+            {
+                try
+                {
+                    item.FileData = Convert.FromBase64String(updateItemDto.FileData);
+                }
+                catch (FormatException)
+                {
+                    return BadRequest("Invalid file data format");
+                }
+            }
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ItemExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/items/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(int id)
+        {
+            var item = await _context.Items.FindAsync(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+
+            _context.Items.Remove(item);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool ItemExists(int id)
+        {
+            return _context.Items.Any(e => e.Id == id);
+        }
+
+        // Upload file endpoint
+        [HttpPost("upload")]
+        public async Task<ActionResult> UploadFile(IFormFile file)
+        {
+            try
+            {
+                if (file == null || file.Length == 0)
+                    return BadRequest("No file uploaded");
+
+                // Create uploads directory if it doesn't exist
+                var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+                if (!Directory.Exists(uploadsPath))
+                    Directory.CreateDirectory(uploadsPath);
+
+                // Generate unique filename
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                var filePath = Path.Combine(uploadsPath, fileName);
+
+                // Save file
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Return file information
+                var result = new
+                {
+                    fileUrl = $"/api/Items/download/{fileName}",
+                    fileName = file.FileName,
+                    fileSize = file.Length,
+                    contentType = file.ContentType
+                };
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpGet("download/{fileName}")]
+        public IActionResult DownloadFile(string fileName)
+        {
+            try
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", fileName);
+                if (!System.IO.File.Exists(filePath))
+                    return NotFound();
+
+                var fileBytes = System.IO.File.ReadAllBytes(filePath);
+                var contentType = GetContentType(filePath);
+                return File(fileBytes, contentType, fileName);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        private string GetContentType(string path)
+        {
+            var types = new Dictionary<string, string>
+            {
+                { ".mp3", "audio/mpeg" },
+                { ".wav", "audio/wav" },
+                { ".jpg", "image/jpeg" },
+                { ".jpeg", "image/jpeg" },
+                { ".png", "image/png" },
+                { ".gif", "image/gif" },
+                { ".pdf", "application/pdf" },
+                { ".txt", "text/plain" },
+                { ".doc", "application/msword" },
+                { ".docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document" }
+            };
+
+            var ext = Path.GetExtension(path).ToLowerInvariant();
+            return types.ContainsKey(ext) ? types[ext] : "application/octet-stream";
+        }
     }
 }

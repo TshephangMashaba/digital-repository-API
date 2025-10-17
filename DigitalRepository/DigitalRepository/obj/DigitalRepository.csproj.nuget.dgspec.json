@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj": {}
+    "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj": {
+    "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
+        "projectUniqueName": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
         "projectName": "DigitalRepository",
-        "projectPath": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
+        "projectPath": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
         "packagesPath": "C:\\Users\\QXZ5SWG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\QXZ5SWG\\Desktop\\DigitalRepository\\DigitalRepository\\obj\\",
+        "outputPath": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,12 @@
               "version": "[8.0.21, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.21, )"
             },

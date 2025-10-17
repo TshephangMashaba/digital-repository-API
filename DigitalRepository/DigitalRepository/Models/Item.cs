@@ -10,21 +10,30 @@
         public string Subject { get; set; }
         public string Description { get; set; }
         public string Publisher { get; set; }
-        public DateTime? DateCreated { get; set; }
-        public DateTime DateUploaded { get; set; }
-        public string Type { get; set; } // Audio, Image, Text, etc.
-        public string Format { get; set; } // mp3, jpg, pdf, etc.
-        public string Identifier { get; set; } // URL or unique identifier
+        public string Contributor { get; set; }
+        public DateTime? Date { get; set; }
+        public string Type { get; set; }
+        public string Format { get; set; }
+        public string Identifier { get; set; }
         public string Source { get; set; }
         public string Language { get; set; }
-        public string Rights { get; set; } // Copyright information
+        public string Relation { get; set; }
+        public string Coverage { get; set; }
+        public string Rights { get; set; }
 
-        // Additional project-specific fields
-        public ItemCategory Category { get; set; } // Song, DigitalArtifact, BornDigital
+        // Additional fields
+        public ItemCategory Category { get; set; }
         public string MemberName { get; set; }
-        public string Explanation { get; set; } // Why this item was chosen
-    }
+        public string Explanation { get; set; }
+        public DateTime DateUploaded { get; set; }
 
+        // File storage fields
+        public string FileName { get; set; }
+        public string FileUrl { get; set; }
+        public long? FileSize { get; set; }
+        public string FileContentType { get; set; }
+        public byte[] FileData { get; set; } // Store file bytes in database
+    }
 
     public enum ItemCategory
     {
