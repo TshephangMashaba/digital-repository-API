@@ -24,7 +24,8 @@ namespace DigitalRepository.Controllers
         public async Task<ActionResult<IEnumerable<ItemDto>>> GetItems()
         {
             var items = await _context.Items
-                .OrderBy(i => i.Category)
+                .Include(i => i.Category) // Include category
+                .OrderBy(i => i.CategoryId)
                 .ThenBy(i => i.MemberName)
                 .Select(i => new ItemDto
                 {
@@ -44,7 +45,8 @@ namespace DigitalRepository.Controllers
                     Relation = i.Relation,
                     Coverage = i.Coverage,
                     Rights = i.Rights,
-                    Category = i.Category,
+                    CategoryId = i.CategoryId,
+                    CategoryName = i.Category.Name, // Add category name
                     MemberName = i.MemberName,
                     Explanation = i.Explanation,
                     DateUploaded = i.DateUploaded,
@@ -55,6 +57,22 @@ namespace DigitalRepository.Controllers
                 .ToListAsync();
 
             return Ok(items);
+        }
+
+        // Add this method to get categories
+        [HttpGet("categories")]
+        public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategories()
+        {
+            var categories = await _context.Categories
+                .Select(c => new CategoryDto
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                    Description = c.Description
+                })
+                .ToListAsync();
+
+            return Ok(categories);
         }
 
         // GET: api/items/5
@@ -84,7 +102,7 @@ namespace DigitalRepository.Controllers
                 Relation = item.Relation,
                 Coverage = item.Coverage,
                 Rights = item.Rights,
-                Category = item.Category,
+             
                 MemberName = item.MemberName,
                 Explanation = item.Explanation,
                 DateUploaded = item.DateUploaded,
@@ -121,10 +139,16 @@ namespace DigitalRepository.Controllers
         }
 
 
-        // POST: api/items
         [HttpPost]
         public async Task<ActionResult<ItemDto>> CreateItem([FromBody] CreateItemDto createItemDto)
         {
+            // Verify category exists
+            var category = await _context.Categories.FindAsync(createItemDto.CategoryId);
+            if (category == null)
+            {
+                return BadRequest("Invalid category ID");
+            }
+
             var item = new Item
             {
                 Title = createItemDto.Title,
@@ -142,7 +166,7 @@ namespace DigitalRepository.Controllers
                 Relation = createItemDto.Relation,
                 Coverage = createItemDto.Coverage,
                 Rights = createItemDto.Rights,
-                Category = createItemDto.Category,
+                CategoryId = createItemDto.CategoryId, // Use CategoryId
                 MemberName = createItemDto.MemberName,
                 Explanation = createItemDto.Explanation,
                 DateUploaded = DateTime.UtcNow,
@@ -185,7 +209,8 @@ namespace DigitalRepository.Controllers
                 Relation = item.Relation,
                 Coverage = item.Coverage,
                 Rights = item.Rights,
-                Category = item.Category,
+                CategoryId = item.CategoryId,
+                CategoryName = category.Name, // Include category name
                 MemberName = item.MemberName,
                 Explanation = item.Explanation,
                 DateUploaded = item.DateUploaded,
@@ -197,7 +222,7 @@ namespace DigitalRepository.Controllers
             return CreatedAtAction(nameof(GetItem), new { id = item.Id }, itemDto);
         }
 
-        // PUT: api/items/5
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateItem(int id, [FromBody] CreateItemDto updateItemDto)
         {
@@ -205,6 +230,13 @@ namespace DigitalRepository.Controllers
             if (item == null)
             {
                 return NotFound();
+            }
+
+            // Verify category exists
+            var category = await _context.Categories.FindAsync(updateItemDto.CategoryId);
+            if (category == null)
+            {
+                return BadRequest("Invalid category ID");
             }
 
             item.Title = updateItemDto.Title;
@@ -222,7 +254,7 @@ namespace DigitalRepository.Controllers
             item.Relation = updateItemDto.Relation;
             item.Coverage = updateItemDto.Coverage;
             item.Rights = updateItemDto.Rights;
-            item.Category = updateItemDto.Category;
+            item.CategoryId = updateItemDto.CategoryId; // Use CategoryId
             item.MemberName = updateItemDto.MemberName;
             item.Explanation = updateItemDto.Explanation;
             item.FileName = updateItemDto.FileName;
@@ -341,6 +373,8 @@ namespace DigitalRepository.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
 
         private string GetContentType(string path)
         {

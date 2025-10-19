@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DigitalRepository.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20251016223105_Initial-migrate")]
-    partial class Initialmigrate
+    [Migration("20251018210802_nw")]
+    partial class nw
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,49 @@ namespace DigitalRepository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("DigitalRepository.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Audio recordings and music",
+                            Name = "Song"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Digital copies of physical artifacts",
+                            Name = "DigitalArtifact"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Originally created digital content",
+                            Name = "BornDigital"
+                        });
+                });
+
             modelBuilder.Entity("DigitalRepository.Models.Item", b =>
                 {
                     b.Property<int>("Id")
@@ -33,7 +76,7 @@ namespace DigitalRepository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Category")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Contributor")
@@ -78,8 +121,8 @@ namespace DigitalRepository.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<string>("FileUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Format")
                         .HasMaxLength(50)
@@ -131,13 +174,29 @@ namespace DigitalRepository.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Category");
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("MemberName");
 
                     b.HasIndex("Type");
 
                     b.ToTable("Items");
+                });
+
+            modelBuilder.Entity("DigitalRepository.Models.Item", b =>
+                {
+                    b.HasOne("DigitalRepository.Models.Category", "Category")
+                        .WithMany("Items")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("DigitalRepository.Models.Category", b =>
+                {
+                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

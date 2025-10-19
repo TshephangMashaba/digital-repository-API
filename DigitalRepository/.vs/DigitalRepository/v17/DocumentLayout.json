@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210802_nw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251018210802_nw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210723_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251018210723_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\data\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\data\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016225202_ne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251016225202_ne.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018204901_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251018204901_New.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalRepository\\Migrations\\20251016202426_Initial-Migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|c:\\users\\qxz5swg\\desktop\\digital-repository-api\\digitalrepository\\digitalrepository\\digitalrepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8ED664F4-E4A3-412F-8F1A-794A2E07BAB0}|DigitalRepository\\DigitalRepository.csproj|solutionrelative:digitalrepository\\digitalrepository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -67,32 +71,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20251018210802_nw.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210802_nw.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251018210802_nw.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210802_nw.cs",
+              "RelativeToolTip": "DigitalRepository\\Migrations\\20251018210802_nw.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T21:08:02.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20251018210723_new.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210723_new.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251018210723_new.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018210723_new.cs",
+              "RelativeToolTip": "DigitalRepository\\Migrations\\20251018210723_new.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T21:07:23.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ItemsController.cs",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Controllers\\ItemsController.cs",
               "RelativeDocumentMoniker": "DigitalRepository\\Controllers\\ItemsController.cs",
               "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Controllers\\ItemsController.cs",
               "RelativeToolTip": "DigitalRepository\\Controllers\\ItemsController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAuwGgAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T19:36:27.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20251016225202_ne.cs",
-              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016225202_ne.cs",
-              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016225202_ne.cs",
-              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016225202_ne.cs",
-              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016225202_ne.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "20251018204901_New.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018204901_New.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251018204901_New.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251018204901_New.cs",
+              "RelativeToolTip": "DigitalRepository\\Migrations\\20251018204901_New.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T22:52:02.806Z",
+              "WhenOpened": "2025-10-18T20:49:01.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "20251016211145_Initial Migration.cs",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016211145_Initial Migration.cs",
               "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016211145_Initial Migration.cs",
@@ -100,8 +130,7 @@
               "RelativeToolTip": "DigitalRepository\\Migrations\\20251016211145_Initial Migration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T21:11:45.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T21:11:45.916Z"
             },
             {
               "$type": "Document",
@@ -111,92 +140,40 @@
               "RelativeDocumentMoniker": "DigitalRepository\\Data\\RepositoryContext.cs",
               "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Data\\RepositoryContext.cs",
               "RelativeToolTip": "DigitalRepository\\Data\\RepositoryContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T19:26:26.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ItemDto.cs",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DTOs\\ItemDto.cs",
               "RelativeDocumentMoniker": "DigitalRepository\\DTOs\\ItemDto.cs",
               "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DTOs\\ItemDto.cs",
               "RelativeToolTip": "DigitalRepository\\DTOs\\ItemDto.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwEwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T19:35:17.872Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Models\\Item.cs",
               "RelativeDocumentMoniker": "DigitalRepository\\Models\\Item.cs",
               "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Models\\Item.cs",
               "RelativeToolTip": "DigitalRepository\\Models\\Item.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA7wCsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-16T19:24:50.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20251016223105_Initial-migrate.cs",
-              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs",
-              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs",
-              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs",
-              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016223105_Initial-migrate.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T22:31:05.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Program.cs",
-              "RelativeDocumentMoniker": "DigitalRepository\\Program.cs",
-              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Program.cs",
-              "RelativeToolTip": "DigitalRepository\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T19:37:23.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20251016211235_initial.cs",
-              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016211235_initial.cs",
-              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016211235_initial.cs",
-              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016211235_initial.cs",
-              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016211235_initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T21:12:36.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "20251016212948_Iniial .cs",
-              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
-              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
-              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
-              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T21:29:49.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\appsettings.json",
               "RelativeDocumentMoniker": "DigitalRepository\\appsettings.json",
@@ -209,7 +186,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Program.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Program.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Program.cs",
+              "RelativeToolTip": "DigitalRepository\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:37:23.792Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "20251016211235_initial.cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016211235_initial.cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016211235_initial.cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016211235_initial.cs",
+              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016211235_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T21:12:36.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251016212948_Iniial .cs",
+              "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
+              "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
+              "ToolTip": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
+              "RelativeToolTip": "DigitalRepository\\Migrations\\20251016212948_Iniial .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T21:29:49.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "20251016202426_Initial-Migration.cs",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\Migrations\\20251016202426_Initial-Migration.cs",
               "RelativeDocumentMoniker": "DigitalRepository\\Migrations\\20251016202426_Initial-Migration.cs",
@@ -217,12 +230,11 @@
               "RelativeToolTip": "DigitalRepository\\Migrations\\20251016202426_Initial-Migration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T20:24:26.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T20:24:26.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DigitalRepository.csproj",
               "DocumentMoniker": "C:\\Users\\QXZ5SWG\\Desktop\\digital-repository-API\\DigitalRepository\\DigitalRepository\\DigitalRepository.csproj",
               "RelativeDocumentMoniker": "DigitalRepository\\DigitalRepository.csproj",
@@ -230,8 +242,7 @@
               "RelativeToolTip": "DigitalRepository\\DigitalRepository.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-16T19:34:47.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T19:34:47.326Z"
             }
           ]
         }

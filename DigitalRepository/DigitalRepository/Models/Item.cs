@@ -1,5 +1,6 @@
 ﻿namespace DigitalRepository.Models
 {
+    // In DigitalRepository.Models namespace
     public class Item
     {
         public int Id { get; set; }
@@ -21,8 +22,8 @@
         public string Coverage { get; set; }
         public string Rights { get; set; }
 
-        // Additional fields
-        public ItemCategory Category { get; set; }
+        // Additional fields - CHANGE TO INT
+        public int CategoryId { get; set; } // Changed from ItemCategory enum
         public string MemberName { get; set; }
         public string Explanation { get; set; }
         public DateTime DateUploaded { get; set; }
@@ -32,13 +33,20 @@
         public string FileUrl { get; set; }
         public long? FileSize { get; set; }
         public string FileContentType { get; set; }
-        public byte[] FileData { get; set; } // Store file bytes in database
+        public byte[] FileData { get; set; }
+
+        // Navigation property
+        public Category Category { get; set; }
     }
 
-    public enum ItemCategory
+    // NEW: Add Category model
+    public class Category
     {
-        Song,
-        DigitalArtifact,
-        BornDigital
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+
+        // Navigation property
+        public ICollection<Item> Items { get; set; }
     }
 }

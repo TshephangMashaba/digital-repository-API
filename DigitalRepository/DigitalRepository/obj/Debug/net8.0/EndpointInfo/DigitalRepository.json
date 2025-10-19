@@ -89,6 +89,44 @@
         }
       }
     },
+    "/api/Items/categories": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoryDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Items/{id}": {
       "get": {
         "tags": [
@@ -213,6 +251,46 @@
         }
       }
     },
+    "/api/Items/{id}/hasfile": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Items/upload": {
       "post": {
         "tags": [
@@ -309,9 +387,27 @@
   },
   "components": {
     "schemas": {
+      "CategoryDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateItemDto": {
         "required": [
-          "category",
+          "categoryId",
           "memberName",
           "rights",
           "title",
@@ -380,8 +476,9 @@
             "minLength": 1,
             "type": "string"
           },
-          "category": {
-            "$ref": "#/components/schemas/ItemCategory"
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
           },
           "memberName": {
             "minLength": 1,
@@ -410,15 +507,6 @@
           }
         },
         "additionalProperties": false
-      },
-      "ItemCategory": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
       },
       "ItemDto": {
         "type": "object",
@@ -492,8 +580,13 @@
             "type": "string",
             "nullable": true
           },
-          "category": {
-            "$ref": "#/components/schemas/ItemCategory"
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoryName": {
+            "type": "string",
+            "nullable": true
           },
           "memberName": {
             "type": "string",
